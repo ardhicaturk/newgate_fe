@@ -14,7 +14,7 @@ const RegisterPage = ({...props}) => {
 
   return (
     <>
-      <Typography variant={'h2'} className={'login-header-title'} >Complete Your Registration</Typography>
+      <Typography variant={'h2'} className={'header-title'} >Complete Your Registration</Typography>
       <Container className='login-form'>
         <Grid container spacing={0} className={'header-form'}>
           <Grid item xs={1} >

@@ -23,7 +23,7 @@ const LoginPage = ({...props}) => {
 
   return (
     <>
-      <Typography variant={'h2'} className={'login-header-title'} >Welcome to Newgate</Typography>
+      <Typography variant={'h2'} className={'header-title'} >Welcome to Newgate</Typography>
       <Container className='login-form'>
         <Grid container spacing={0} className={'header-form'}>
           <Grid item xs={1} >
