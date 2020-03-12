@@ -9,6 +9,8 @@ import { Helmet } from 'react-helmet';
 import { ThemeProvider, CssBaseline } from '@material-ui/core'
 import theme from './theme'
 
+import Error from './components/error'
+
 ReactDOM.render(<BrowserRouter>
     <ThemeProvider theme={theme}>
       <CssBaseline/>
@@ -17,15 +19,17 @@ ReactDOM.render(<BrowserRouter>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Newgate</title>
     </Helmet>
-    {
+
+    <Switch key={`pages`}>
+      {
         route.map((e, i) => (
-          <Switch key={`pages-${i}`}>
             <Route exact={e.exact || false} path={e.url}>
               {e.page}
             </Route>
-          </Switch>
         ))
       }
+      <Route component={() => <Error status={404} />} />
+    </Switch>
     </ThemeProvider>
   </BrowserRouter>
 , document.getElementById('root'));

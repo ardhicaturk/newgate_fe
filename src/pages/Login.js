@@ -74,13 +74,13 @@ const LoginPage = ({...props}) => {
 
           <Grid container style={{marginTop: '10px', borderBottom: '1px solid black'}}>
             <Grid item xs={3}>
-              <Link>Forgot password?</Link>
+              <Link to='/forgot'>Forgot password?</Link>
             </Grid>
             <Grid item xs={6}>
 
             </Grid>
             <Grid item xs={3}>
-              <Link>Register</Link>
+              <Link to={'/register'}>Register</Link>
             </Grid>
           </Grid>
         </Container>

@@ -1,6 +1,7 @@
 import React from 'react';
 import LoginPage from './pages/Login';
 import RegisterPage from './pages/Register';
+import ForgotPasswordPage from './pages/ForgotPassword';
 
 const route = [
     {
@@ -12,8 +13,12 @@ const route = [
         url: '/register',
         page: <RegisterPage />,
         exact: true
+    },
+    {
+        url: '/forgot',
+        page: <ForgotPasswordPage />,
+        exact: true
     }
-    
 ]
 
 export default route;
