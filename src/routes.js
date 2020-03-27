@@ -2,8 +2,14 @@ import React from 'react';
 import LoginPage from './pages/Login';
 import RegisterPage from './pages/Register';
 import ForgotPasswordPage from './pages/ForgotPassword';
+import Dashboard from './pages/Dashboard';
 
 const route = [
+    {
+        url: '/',
+        page: <Dashboard />,
+        exact: true
+    },
     {
         url: '/login',
         page: <LoginPage />,
